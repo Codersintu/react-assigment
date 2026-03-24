@@ -17,7 +17,7 @@ const [order,setorder]=useState([]);
       <div className="w-full max-w-7xl min-h-screen bg-linear-to-r from-[#061a2b] via-[#082338] to-[#0b2f4a] flex flex-col items-center justify-center mt-10">
         <div className="w-full max-w-2xl rounded-2xl flex flex-col p-10 shadow-2xl bg-linear-to-r from-[#2D3844] via-[#62240C] to-[#62240C] gap-8">
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-8'>
-           
+            <h1 className='text-2xl text-center text-white font-bold'>Create Order</h1>
             <div className="flex flex-col">
             <label className='py-2 px-5 bg-gray-300 rounded-2xl w-full'>
             <input type="text" className='outline-none w-full' placeholder='Customer name ...' {...register("name",{required:"name is required"})}/>
