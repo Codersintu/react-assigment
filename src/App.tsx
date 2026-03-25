@@ -4,12 +4,13 @@ import { Loader } from 'lucide-react';
 import { useState } from 'react';
 
 function App() {
-const {register,handleSubmit,formState:{errors,isSubmitting}}=useForm()
+const {register,handleSubmit,formState:{errors,isSubmitting},reset}=useForm()
 const [order,setorder]=useState([]);
 
- const onSubmit=async(data:any)=>{
+const onSubmit=async(data:any)=>{
    await new Promise((res)=>setTimeout(res, 1000))
    setorder((prev):any=>[...prev,data]);
+   reset()
  }
 
   return (
